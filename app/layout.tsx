@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Panti Asuhan Pangrekso Dalem Bethlehem",
   description: "Website resmi Panti Asuhan Pangrekso Dalem Bethlehem",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }) {
