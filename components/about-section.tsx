@@ -41,7 +41,7 @@ export default function AboutSection() {
                 </div>
                 <h3 className="font-semibold text-slate-900 text-lg md:text-xl mb-2 md:mb-3">Visi</h3>
                 <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-                  Menjadi rumah yang memberikan harapan dan masa depan cerah bagi setiap anak
+                  Lembaga Kesejahteraan Sosial Anak (LKSA) yang dikelola secara profesional dalam semangat JITHu: jujur, iman pada Penyelenggaraan Ilahi, tangguh dan humanis
                 </p>
               </div>
               <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-slate-100 hover:shadow-2xl hover:border-violet-100 transition-all duration-300 group">
@@ -50,7 +50,11 @@ export default function AboutSection() {
                 </div>
                 <h3 className="font-semibold text-slate-900 text-lg md:text-xl mb-2 md:mb-3">Misi</h3>
                 <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-                  Memberikan pendidikan dan kasih sayang yang berkualitas
+                  <ol className="list-decimal pl-5 space-y-1">
+                    <li>Memperjuangkan martabat dan hak anak</li>
+                    <li>Merawat, mengasuh dan mendidik anak secara profesional</li>
+                    <li>Menanamkan nilai/karakter JITHu</li>
+                  </ol>
                 </p>
               </div>
             </div>
