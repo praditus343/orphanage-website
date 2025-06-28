@@ -49,6 +49,11 @@ export const metadata = {
     "panti asuhan anak katolik pangrekso dalem temanggung",
     "panti asuhan anak katolik pangrekso dalem bethlehem temanggung",
     "panti asuhan anak katolik pangrekso dalem temanggung",
+    "panti asuhan katolik di temanggung",
+    "panti asuhan katolik di temanggung pangrekso dalem bethlehem",
+    "panti asuhan katolik di temanggung pangrekso dalem",
+    "panti asuhan katolik di temanggung pangrekso dalem bethlehem temanggung",
+    "panti asuhan katolik di temanggung pangrekso dalem temanggung",
   ],
   
   // Konfigurasi icon yang sudah ada

@@ -5,48 +5,55 @@ import Image from "next/image"
 import { X, ZoomIn, Filter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+// Tambahkan deskripsi khusus untuk setiap item galeri
 const galleryImages = [
   {
     id: 1,
-    src: "/1.png?height=400&width=600",
+    src: "/belajar.jpg?height=400&width=600",
     alt: "Kegiatan belajar anak-anak",
     caption: "Suasana belajar yang kondusif dan menyenangkan",
     category: "Pendidikan",
+    description: "Program pendidikan di Panti Asuhan Pangrekso Dalem Bethlehem dirancang dengan kurikulum terstruktur dan pendampingan personal, memastikan setiap anak mendapatkan fondasi akademik yang kuat untuk masa depan mereka."
   },
   {
     id: 2,
-    src: "/1.png?height=400&width=600",
+    src: "/olahraga.jpg?height=400&width=600",
     alt: "Kegiatan olahraga",
     caption: "Pengembangan fisik melalui kegiatan olahraga",
     category: "Olahraga",
+    description: "Kegiatan olahraga rutin menjadi bagian penting dalam kehidupan anak-anak di panti untuk menjaga kesehatan, membangun kerjasama tim, dan mengembangkan disiplin diri melalui berbagai cabang olahraga yang diminati."
   },
   {
     id: 3,
-    src: "/1.png?height=400&width=600",
+    src: "/seni.png?height=400&width=600",
     alt: "Kegiatan kesenian",
     caption: "Eksplorasi bakat seni dan kreativitas",
     category: "Seni",
+    description: "Kami mendorong pengembangan bakat seni dengan menyediakan berbagai kegiatan kreatif seperti musik, tari, lukis, dan kerajinan tangan yang memungkinkan anak-anak mengekspresikan diri dan mengembangkan apresiasi terhadap keindahan."
   },
   {
     id: 4,
-    src: "/1.png?height=400&width=600",
+    src: "/lab.jpg?height=400&width=600",
     alt: "Gedung panti asuhan",
     caption: "Fasilitas modern dan nyaman untuk anak-anak",
     category: "Fasilitas",
+    description: "Panti Asuhan Pangrekso Dalem Bethlehem dilengkapi dengan fasilitas pendukung yang memadai, termasuk perpustakaan, laboratorium komputer, dan ruang belajar yang nyaman untuk mendukung proses belajar dan tumbuh kembang anak."
   },
   {
     id: 5,
-    src: "/1.png?height=400&width=600",
+    src: "/kekeluargaan.JPG?height=400&width=600",
     alt: "Kegiatan bersama",
     caption: "Momen kebersamaan dan kekeluargaan",
     category: "Kegiatan",
+    description: "Kebersamaan adalah nilai inti dari Panti Asuhan Pangrekso Dalem Bethlehem. Melalui berbagai kegiatan komunal, kami membangun rasa persaudaraan dan kekeluargaan yang kuat di antara anak-anak dan pengasuh."
   },
   {
     id: 6,
-    src: "/1.png?height=400&width=600",
+    src: "/apresiasidonatur.JPG?height=400&width=600",
     alt: "Kunjungan donatur",
     caption: "Apresiasi kepada para donatur dan relawan",
     category: "Kunjungan",
+    description: "Kami mengucapkan terima kasih kepada para donatur dan relawan yang telah memberikan dukungan berharga. Kontribusi Anda memungkinkan kami terus memberi pelayanan terbaik dan kesempatan berkembang bagi anak-anak di panti asuhan."
   },
 ]
 
@@ -229,30 +236,29 @@ export default function GallerySection() {
               <span className="sr-only">Close</span>
             </button>
 
-            {/* Modal Content */}
-            <div className="bg-white rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto">
-              <div className="relative">
-                <Image
-                  src={selectedImage.src || "/1.png"}
-                  alt={selectedImage.alt}
-                  width={1000}
-                  height={600}
-                  className="w-full h-auto max-h-[60vh] object-cover"
-                />
-                <div className="absolute top-2 sm:top-3 md:top-4 right-2 sm:right-3 md:right-4 bg-indigo-500 text-white text-xs font-medium px-2 sm:px-3 py-1 rounded-full">
-                  {selectedImage.category}
-                </div>
-              </div>
-              <div className="p-4 sm:p-6 md:p-8">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-2 sm:mb-3">
-                  {selectedImage.caption}
-                </h3>
-                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Panti Asuhan Pangrekso Dalem Bethlehem menyediakan berbagai kegiatan untuk mendukung perkembangan
-                  anak-anak secara holistik, termasuk pendidikan formal, pengembangan bakat, dan pembinaan karakter.
-                </p>
-              </div>
-            </div>
+{/* Modal Content */}
+<div className="bg-white rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto">
+  <div className="relative">
+    <Image
+      src={selectedImage.src || "/1.png"}
+      alt={selectedImage.alt}
+      width={1000}
+      height={600}
+      className="w-full h-auto max-h-[60vh] object-cover"
+    />
+    <div className="absolute top-2 sm:top-3 md:top-4 right-2 sm:right-3 md:right-4 bg-indigo-500 text-white text-xs font-medium px-2 sm:px-3 py-1 rounded-full">
+      {selectedImage.category}
+    </div>
+  </div>
+  <div className="p-4 sm:p-6 md:p-8">
+    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-2 sm:mb-3">
+      {selectedImage.caption}
+    </h3>
+    <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+      {selectedImage.description}
+    </p>
+  </div>
+</div>
           </div>
         </div>
       )}

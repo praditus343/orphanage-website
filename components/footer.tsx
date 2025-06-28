@@ -91,7 +91,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
             
             <p className="text-slate-400 leading-relaxed max-w-md text-xs sm:text-sm md:text-base lg:text-lg mb-4 sm:mb-6 md:mb-8">
               Memberikan kasih sayang, pendidikan berkualitas, dan membangun masa depan cerah untuk anak-anak
-              Indonesia yang membutuhkan dukungan sejak 1995.
+              Indonesia yang membutuhkan dukungan sejak 1933.
             </p>
 
             {/* Social Links */}
