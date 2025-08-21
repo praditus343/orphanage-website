@@ -1,6 +1,7 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -25,17 +26,11 @@ export const metadata = {
     "panti asuhan pangrekso dalem bethlehem temanggung",
     "panti asuhan anak",
     "panti asuhan anak temanggung",
-    "panti asuhan temanggung",
     "panti asuhan katolik",
     "panti asuhan katolik temanggung",
     "panti asuhan katolik pangrekso dalem bethlehem",
-    "panti asuhan katolik pangrekso dalem",
     "panti asuhan katolik pangrekso dalem temanggung",
-    "panti asuhan katolik pangrekso dalem bethlehem temanggung",
-    "panti asuhan katolik bethlehem",
     "panti asuhan katolik bethlehem temanggung",
-    "panti asuhan katolik pangrekso dalem temanggung",
-    "panti asuhan katolik pangrekso dalem bethlehem temanggung",
     "donasi panti asuhan temanggung",
     "yayasan anak temanggung",
     "lembaga sosial temanggung"
@@ -168,6 +163,9 @@ export default function RootLayout({ children }) {
         >
           {children}
         </ThemeProvider>
+        
+        {/* Vercel Analytics - Tambahkan di sini */}
+        <Analytics />
       </body>
     </html>
   )
