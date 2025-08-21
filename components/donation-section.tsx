@@ -126,27 +126,14 @@ export default function DonationSection() {
                     <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-slate-200 hover:border-indigo-200 hover:bg-indigo-50/50 transition-all duration-300">
                       <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3 md:mb-4">
                         <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg">
-                          <span className="text-white font-bold text-xs sm:text-sm">BCA</span>
+                          <span className="text-white font-bold text-xs sm:text-sm">BRI</span>
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className="font-bold text-slate-900 text-sm sm:text-base md:text-lg">Bank BCA</p>
-                          <p className="text-slate-600 font-mono text-xs sm:text-sm md:text-base">1234567890</p>
+                          <p className="font-bold text-slate-900 text-sm sm:text-base md:text-lg">Rekening Bank BRI</p>
+                          <p className="text-slate-600 font-mono text-xs sm:text-sm md:text-base">0102-01-001866-56-6</p>
                         </div>
                       </div>
-                      <p className="text-xs sm:text-sm text-slate-600">a.n. Yayasan Pangrekso Dalem Bethlehem</p>
-                    </div>
-
-                    <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-slate-200 hover:border-indigo-200 hover:bg-indigo-50/50 transition-all duration-300">
-                      <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3 md:mb-4">
-                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-yellow-500 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg">
-                          <span className="text-white font-bold text-xs sm:text-sm">MDR</span>
-                        </div>
-                        <div className="min-w-0 flex-1">
-                          <p className="font-bold text-slate-900 text-sm sm:text-base md:text-lg">Bank Mandiri</p>
-                          <p className="text-slate-600 font-mono text-xs sm:text-sm md:text-base">0987654321</p>
-                        </div>
-                      </div>
-                      <p className="text-xs sm:text-sm text-slate-600">a.n. Yayasan Pangrekso Dalem Bethlehem</p>
+                      <p className="text-xs sm:text-sm text-slate-600">A.N. Yayasan Sosial Penyelenggaraan Ilahi</p>
                     </div>
                   </div>
                 </TabsContent>
