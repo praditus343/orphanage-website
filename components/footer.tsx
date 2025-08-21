@@ -61,7 +61,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
   const contactInfo = [
     {
       icon: <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-400 flex-shrink-0 mt-0.5" />,
-      text: "Jl. Bethlehem No. 123, Yogyakarta 55223"
+      text: "Jl. Jenderal Sudirman No.53, Mardisari, Kertosari, Kec. Temanggung, Kabupaten Temanggung, Jawa Tengah 56217"
     },
     {
       icon: <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-400 flex-shrink-0 mt-0.5" />,
