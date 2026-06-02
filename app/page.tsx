@@ -6,7 +6,7 @@ import Footer from "@/components/footer"
 import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
 import ProgramsSection from "@/components/programs-section"
-import TestimonialCarousel from "@/components/testimonial-carousel"
+//import TestimonialCarousel from "@/components/testimonial-carousel"
 import GallerySection from "@/components/gallery-section"
 import DonationSection from "@/components/donation-section"
 import ImpactNumbers from "@/components/impact-numbers"
@@ -59,7 +59,7 @@ export default function HomePage() {
         <ImpactNumbers />
         <GallerySection />
         <ProgramsSection />
-        <TestimonialCarousel />
+        {/* <TestimonialCarousel /> */}
         <DonationSection />
         <ContactSection />
       </main>

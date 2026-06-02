@@ -18,7 +18,7 @@ export default function Header({ scrolled, activeSection, scrollToSection }: Hea
     { name: "Tentang", href: "tentang" },
     { name: "Program", href: "program" },
     { name: "Galeri", href: "galeri" },
-    { name: "Testimoni", href: "testimoni" },
+    // { name: "Testimoni", href: "testimoni" },
     { name: "Donasi", href: "donasi" },
   ]
 
