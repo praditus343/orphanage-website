@@ -11,11 +11,27 @@ const inter = Inter({
 
 export const metadata = {
   // Title dan description yang dioptimalkan
-  title: "Panti Asuhan Pangrekso Dalem Bethlehem | Temanggung",
-  description: "Website resmi Panti Asuhan Pangrekso Dalem Bethlehem Temanggung. Memberikan pendidikan berkualitas dan kasih sayang untuk anak-anak yang membutuhkan sejak 1933.",
+  title: "LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem | Temanggung",
+  description: "Website resmi LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem Temanggung. Memberikan pendidikan berkualitas dan kasih sayang untuk anak-anak yang membutuhkan sejak 1933.",
   
   // Keywords yang sudah ada tetap dipertahankan
   keywords: [
+    "lksa",
+    "lksa temanggung",
+    "lksa pangrekso dalem bethlehem",
+    "lksa bethlehem",
+    "lksa temanggung bethlehem",
+    "lksa pangrekso dalem",
+    "lksa pangrekso dalem temanggung",
+    "lksa pangrekso dalem bethlehem temanggung",
+    "lksa anak",
+    "lksa anak temanggung",
+    "lksa katolik",
+    "lksa katolik temanggung",
+    "lksa katolik pangrekso dalem bethlehem",
+    "lksa katolik pangrekso dalem temanggung",
+    "lksa katolik bethlehem temanggung",
+    "donasi lksa temanggung",
     "panti asuhan",
     "panti asuhan temanggung",
     "panti asuhan pangrekso dalem bethlehem",
@@ -63,15 +79,15 @@ export const metadata = {
     type: "website",
     locale: "id_ID",
     url: "https://pangreksodalem.vercel.app",
-    title: "Panti Asuhan Pangrekso Dalem Bethlehem | Rumah Kasih untuk Anak Indonesia",
+    title: "LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem | Rumah Kasih untuk Anak Indonesia",
     description: "Memberikan pendidikan berkualitas, kasih sayang, dan membangun masa depan cerah untuk anak-anak yang membutuhkan di Temanggung sejak 1933.",
-    siteName: "Panti Asuhan Pangrekso Dalem Bethlehem",
+    siteName: "LKSA Pangrekso Dalem Bethlehem",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Panti Asuhan Pangrekso Dalem Bethlehem - Rumah Kasih untuk Anak Indonesia",
+        alt: "LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem - Rumah Kasih untuk Anak Indonesia",
       },
     ],
   },
@@ -79,7 +95,7 @@ export const metadata = {
   // Enhanced Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Panti Asuhan Pangrekso Dalem Bethlehem",
+    title: "LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem",
     description: "Memberikan pendidikan berkualitas dan kasih sayang untuk anak-anak yang membutuhkan di Temanggung sejak 1933.",
     images: ["/og-image.jpg"],
     site: "@pantibethlehem",
@@ -104,9 +120,9 @@ export const metadata = {
   },
   
   // Additional metadata
-  authors: [{ name: "Panti Asuhan Pangrekso Dalem Bethlehem" }],
+  authors: [{ name: "LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem" }],
   generator: "Next.js",
-  applicationName: "Panti Asuhan Pangrekso Dalem Bethlehem",
+  applicationName: "LKSA Pangrekso Dalem Bethlehem",
   category: "non-profit organization",
 }
 
@@ -124,11 +140,11 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "NGO", 
-              "name": "Panti Asuhan Pangrekso Dalem Bethlehem",
-              "alternateName": "Panti Asuhan Bethlehem Temanggung",
+              "name": "LKSA Pangrekso Dalem Bethlehem",
+              "alternateName": "LKSA Bethlehem Temanggung",
               "url": "https://pangreksodalem.vercel.app",
               "logo": "https://pangreksodalem.vercel.app/logo.png",
-              "description": "Panti Asuhan Pangrekso Dalem Bethlehem memberikan pendidikan berkualitas dan kasih sayang untuk anak-anak yang membutuhkan di Temanggung sejak 1933.",
+              "description": "LKSA Pangrekso Dalem Bethlehem memberikan pendidikan berkualitas dan kasih sayang untuk anak-anak yang membutuhkan di Temanggung sejak 1933.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Jl. Jenderal Sudirman No.53, Mardisari, Kertosari",

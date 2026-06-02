@@ -13,7 +13,7 @@ const galleryImages = [
     alt: "Kegiatan belajar anak-anak",
     caption: "Suasana belajar yang kondusif dan menyenangkan",
     category: "Pendidikan",
-    description: "Program pendidikan di Panti Asuhan Pangrekso Dalem Bethlehem dirancang dengan kurikulum terstruktur dan pendampingan personal, memastikan setiap anak mendapatkan fondasi akademik yang kuat untuk masa depan mereka."
+    description: "Program pendidikan di LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem dirancang dengan kurikulum terstruktur dan pendampingan personal, memastikan setiap anak mendapatkan fondasi akademik yang kuat untuk masa depan mereka."
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const galleryImages = [
     alt: "Kegiatan olahraga",
     caption: "Pengembangan fisik melalui kegiatan olahraga",
     category: "Olahraga",
-    description: "Kegiatan olahraga rutin menjadi bagian penting dalam kehidupan anak-anak di panti untuk menjaga kesehatan, membangun kerjasama tim, dan mengembangkan disiplin diri melalui berbagai cabang olahraga yang diminati."
+    description: "Kegiatan olahraga rutin menjadi bagian penting dalam kehidupan anak-anak di LKSA untuk menjaga kesehatan, membangun kerjasama tim, dan mengembangkan disiplin diri melalui berbagai cabang olahraga yang diminati."
   },
   {
     id: 3,
@@ -29,15 +29,15 @@ const galleryImages = [
     alt: "Kegiatan kesenian",
     caption: "Eksplorasi bakat seni dan kreativitas",
     category: "Seni",
-    description: "Kami mendorong pengembangan bakat seni dengan menyediakan berbagai kegiatan kreatif seperti musik, tari, lukis, dan kerajinan tangan yang memungkinkan anak-anak mengekspresikan diri dan mengembangkan apresiasi terhadap keindahan."
+    description: "Kami mendorong pengembangan bakat seni dengan menyediakan berbagai kegiatan kreatif seperti musik, tari, lukis, dan kerajinan tangan yang memungkinkan anak-anak mengekspresikan diri and mengembangkan apresiasi terhadap keindahan."
   },
   {
     id: 4,
     src: "/lab.jpg?height=400&width=600",
-    alt: "Gedung panti asuhan",
+    alt: "Gedung LKSA",
     caption: "Fasilitas modern dan nyaman untuk anak-anak",
     category: "Fasilitas",
-    description: "Panti Asuhan Pangrekso Dalem Bethlehem dilengkapi dengan fasilitas pendukung yang memadai, termasuk perpustakaan, laboratorium komputer, dan ruang belajar yang nyaman untuk mendukung proses belajar dan tumbuh kembang anak."
+    description: "LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem dilengkapi dengan fasilitas pendukung yang memadai, termasuk perpustakaan, laboratorium komputer, dan ruang belajar yang nyaman untuk mendukung proses belajar dan tumbuh kembang anak."
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const galleryImages = [
     alt: "Kegiatan bersama",
     caption: "Momen kebersamaan dan kekeluargaan",
     category: "Kegiatan",
-    description: "Kebersamaan adalah nilai inti dari Panti Asuhan Pangrekso Dalem Bethlehem. Melalui berbagai kegiatan komunal, kami membangun rasa persaudaraan dan kekeluargaan yang kuat di antara anak-anak dan pengasuh."
+    description: "Kebersamaan adalah nilai inti dari LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem. Melalui berbagai kegiatan komunal, kami membangun rasa persaudaraan dan kekeluargaan yang kuat di antara anak-anak dan pengasuh."
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const galleryImages = [
     alt: "Kunjungan donatur",
     caption: "Apresiasi kepada para donatur dan relawan",
     category: "Kunjungan",
-    description: "Kami mengucapkan terima kasih kepada para donatur dan relawan yang telah memberikan dukungan berharga. Kontribusi Anda memungkinkan kami terus memberi pelayanan terbaik dan kesempatan berkembang bagi anak-anak di panti asuhan."
+    description: "Kami mengucapkan terima kasih kepada para donatur dan relawan yang telah memberikan dukungan berharga. Kontribusi Anda memungkinkan kami terus memberi pelayanan terbaik dan kesempatan berkembang bagi anak-anak di LKSA."
   },
 ]
 
@@ -112,7 +112,7 @@ export default function GallerySection() {
             </span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            Dokumentasi kegiatan dan pencapaian anak-anak di Panti Asuhan Pangrekso Dalem Bethlehem
+            Dokumentasi kegiatan dan pencapaian anak-anak di LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem
           </p>
         </div>
 
@@ -191,7 +191,7 @@ export default function GallerySection() {
                   {image.caption}
                 </p>
                 <p className="text-indigo-200 text-xs sm:text-sm hidden sm:block">
-                  Panti Asuhan Pangrekso Dalem Bethlehem
+                  LKSA Pangrekso Dalem Bethlehem
                 </p>
               </div>
 

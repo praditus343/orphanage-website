@@ -22,7 +22,7 @@ export default function AboutSection() {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-responsive-sm text-muted-foreground leading-relaxed">
-                  Panti Asuhan Pangrekso Dalem Bethlehem didirikan pada tahun 1933 dengan visi mulia untuk memberikan
+                  LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem didirikan pada tahun 1933 dengan visi mulia untuk memberikan
                   rumah, pendidikan, dan harapan kepada anak-anak yang membutuhkan. Selama lebih dari 90 tahun, kami
                   telah menjadi rumah bagi ratusan anak di Temanggung.
                 </p>
@@ -64,7 +64,7 @@ export default function AboutSection() {
             <div className="relative z-10 mx-auto max-w-md lg:max-w-none">
               <Image
                 src="/1.png?height=600&width=500"
-                alt="Panti Asuhan Pangrekso Dalem Bethlehem"
+                alt="LKSA Pangrekso Dalem Bethlehem"
                 width={500}
                 height={600}
                 className="rounded-2xl md:rounded-3xl shadow-2xl w-full h-auto"

@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, Home } from "lucide-react"
+import Image from "next/image"
+import { Menu, X, Home, Info, Award, Image as ImageIcon, Heart, PhoneCall } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 interface HeaderProps {
@@ -14,12 +15,12 @@ export default function Header({ scrolled, activeSection, scrollToSection }: Hea
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navigation = [
-    { name: "Beranda", href: "beranda" },
-    { name: "Tentang", href: "tentang" },
-    { name: "Program", href: "program" },
-    { name: "Galeri", href: "galeri" },
-    // { name: "Testimoni", href: "testimoni" },
-    { name: "Donasi", href: "donasi" },
+    { name: "Beranda", href: "beranda", icon: Home },
+    { name: "Tentang", href: "tentang", icon: Info },
+    { name: "Program", href: "program", icon: Award },
+    { name: "Galeri", href: "galeri", icon: ImageIcon },
+    // { name: "Testimoni", href: "testimoni", icon: MessageSquare },
+    { name: "Donasi", href: "donasi", icon: Heart },
   ]
 
   return (
@@ -33,50 +34,60 @@ export default function Header({ scrolled, activeSection, scrollToSection }: Hea
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <div className="flex items-center gap-2 md:gap-3">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <Home className="h-5 w-5 md:h-6 md:w-6 text-white" />
+              <div className="w-10 h-10 md:w-12 md:h-12 relative overflow-hidden rounded-xl shadow-lg shadow-indigo-500/20 bg-white p-0.5">
+                <Image
+                  src="/ico/apple-touch-icon.png"
+                  alt="LKSA Bethlehem Logo"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
               <div className="hidden sm:block">
                 <span className={`text-lg md:text-xl font-bold transition-colors duration-300 ${
                   scrolled ? 'text-slate-900' : 'text-white'
                 }`}>
-                  Panti Asuhan
+                  LKSA Pangrekso Dalem Bethlehem
                 </span>
                 <p className={`text-xs md:text-sm -mt-1 transition-colors duration-300 ${
                   scrolled ? 'text-slate-600' : 'text-white/80'
                 }`}>
-                  Pangrekso Dalem Bethlehem
+                  Lembaga Kesejahteraan Sosial Anak
                 </p>
               </div>
               <div className="block sm:hidden">
                 <span className={`text-base font-bold transition-colors duration-300 ${
                   scrolled ? 'text-slate-900' : 'text-white'
                 }`}>
-                  Panti Asuhan
+                  LKSA
                 </span>
               </div>
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-1">
-              {navigation.map((item) => (
-                <Button
-                  key={item.name}
-                  variant="ghost"
-                  onClick={() => scrollToSection(item.href)}
-                  className={`text-sm font-medium transition-all duration-300 ${
-                    scrolled
-                      ? activeSection === item.href
-                        ? 'text-indigo-600 bg-indigo-50'
-                        : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                      : activeSection === item.href
-                        ? 'text-white bg-white/20'
-                        : 'text-white/80 hover:text-white hover:bg-white/10'
-                  }`}
-                >
-                  {item.name}
-                </Button>
-              ))}
+              {navigation.map((item) => {
+                const Icon = item.icon
+                return (
+                  <Button
+                    key={item.name}
+                    variant="ghost"
+                    onClick={() => scrollToSection(item.href)}
+                    className={`text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
+                      scrolled
+                        ? activeSection === item.href
+                          ? 'text-indigo-600 bg-indigo-50'
+                          : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                        : activeSection === item.href
+                          ? 'text-white bg-white/20'
+                          : 'text-white/80 hover:text-white hover:bg-white/10'
+                    }`}
+                  >
+                    <Icon className="h-4 w-4" />
+                    <span>{item.name}</span>
+                  </Button>
+                )
+              })}
             </nav>
 
             {/* Right Section */}
@@ -85,12 +96,13 @@ export default function Header({ scrolled, activeSection, scrollToSection }: Hea
               <Button
                 onClick={() => scrollToSection("kontak")}
                 size="sm"
-                className={`hidden sm:flex text-sm font-medium transition-all duration-300 ${
+                className={`hidden sm:flex text-sm font-medium transition-all duration-300 items-center gap-2 ${
                   scrolled 
                     ? 'bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white' 
                     : 'bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm border border-white/30'
                 }`}
               >
+                <PhoneCall className="h-4 w-4" />
                 <span className="hidden md:inline">Hubungi Kami</span>
                 <span className="md:hidden">Kontak</span>
               </Button>
@@ -127,12 +139,18 @@ export default function Header({ scrolled, activeSection, scrollToSection }: Hea
           <div className="relative flex flex-col bg-white border-r border-slate-200 w-64 h-full shadow-xl">
             <div className="flex items-center justify-between p-4 border-b border-slate-200">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-lg flex items-center justify-center">
-                  <Home className="h-4 w-4 text-white" />
+                <div className="w-8 h-8 relative overflow-hidden rounded-lg bg-white shadow-sm border border-slate-100 p-0.5">
+                  <Image
+                    src="/ico/apple-touch-icon.png"
+                    alt="LKSA Bethlehem Logo"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-contain rounded-md"
+                  />
                 </div>
                 <div>
-                  <h2 className="text-sm font-semibold text-slate-900">Panti Asuhan</h2>
-                  <p className="text-xs text-slate-600">Pangrekso Dalem</p>
+                  <h2 className="text-sm font-semibold text-slate-900 leading-tight">LKSA Pangrekso Dalem Bethlehem</h2>
+                  <p className="text-xs text-slate-600 mt-0.5">Lembaga Kesejahteraan Sosial Anak</p>
                 </div>
               </div>
               <Button
@@ -144,23 +162,27 @@ export default function Header({ scrolled, activeSection, scrollToSection }: Hea
               </Button>
             </div>
             <nav className="flex-1 p-4 space-y-2">
-              {navigation.map((item) => (
-                <Button
-                  key={item.name}
-                  variant={activeSection === item.href ? "default" : "ghost"}
-                  onClick={() => {
-                    scrollToSection(item.href)
-                    setMobileMenuOpen(false)
-                  }}
-                  className={`w-full justify-start ${
-                    activeSection === item.href 
-                      ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white' 
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                  }`}
-                >
-                  {item.name}
-                </Button>
-              ))}
+              {navigation.map((item) => {
+                const Icon = item.icon
+                return (
+                  <Button
+                    key={item.name}
+                    variant={activeSection === item.href ? "default" : "ghost"}
+                    onClick={() => {
+                      scrollToSection(item.href)
+                      setMobileMenuOpen(false)
+                    }}
+                    className={`w-full justify-start flex items-center gap-3 ${
+                      activeSection === item.href 
+                        ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white' 
+                        : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                    }`}
+                  >
+                    <Icon className="h-4 w-4" />
+                    <span>{item.name}</span>
+                  </Button>
+                )
+              })}
             </nav>
             <div className="p-4 border-t border-slate-200">
               <Button
@@ -168,9 +190,10 @@ export default function Header({ scrolled, activeSection, scrollToSection }: Hea
                   scrollToSection("kontak")
                   setMobileMenuOpen(false)
                 }}
-                className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white"
+                className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white flex items-center justify-center gap-2"
               >
-                Hubungi Kami
+                <PhoneCall className="h-4 w-4" />
+                <span>Hubungi Kami</span>
               </Button>
             </div>
           </div>

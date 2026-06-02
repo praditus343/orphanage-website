@@ -9,7 +9,7 @@ const testimonials = [
   {
     id: 1,
     content:
-      "Panti Asuhan Pangrekso Dalem Bethlehem telah memberikan saya fondasi yang kuat untuk meraih cita-cita. Pendidikan berkualitas dan bimbingan yang penuh kasih sayang membentuk saya menjadi pribadi yang mandiri dan bertanggung jawab.",
+      "LKSA Pangrekso Dalem Bethlehem telah memberikan saya fondasi yang kuat untuk meraih cita-cita. Pendidikan berkualitas dan bimbingan yang penuh kasih sayang membentuk saya menjadi pribadi yang mandiri dan bertanggung jawab.",
     name: "Dr. Budi Santoso, M.Pd",
     role: "Alumni 2015 • Dosen Universitas Gadjah Mada",
     avatar: "/1.png?height=120&width=120",
@@ -18,7 +18,7 @@ const testimonials = [
   {
     id: 2,
     content:
-      "Selama 10 tahun tinggal di panti asuhan ini, saya merasakan kehangatan keluarga yang sesungguhnya. Para pengasuh tidak hanya memberikan tempat tinggal, tetapi juga membimbing kami dengan penuh dedikasi dan cinta kasih.",
+      "Selama 10 tahun tinggal di LKSA ini, saya merasakan kehangatan keluarga yang sesungguhnya. Para pengasuh tidak hanya memberikan tempat tinggal, tetapi juga membimbing kami dengan penuh dedikasi dan cinta kasih.",
     name: "Siti Rahayu, S.E",
     role: "Alumni 2018 • Manager Bank Mandiri",
     avatar: "/1.png?height=120&width=120",
@@ -27,7 +27,7 @@ const testimonials = [
   {
     id: 3,
     content:
-      "Berkat dukungan dan bimbingan dari panti asuhan ini, saya berhasil menyelesaikan pendidikan hingga S2 dan kini bekerja di perusahaan multinasional. Saya sangat bersyukur atas semua yang telah diberikan.",
+      "Berkat dukungan dan bimbingan dari LKSA ini, saya berhasil menyelesaikan pendidikan hingga S2 dan kini bekerja di perusahaan multinasional. Saya sangat bersyukur atas semua yang telah diberikan.",
     name: "Ahmad Hidayat, S.T, M.T",
     role: "Alumni 2012 • Senior Engineer PT. Astra International",
     avatar: "/1.png?height=120&width=120",

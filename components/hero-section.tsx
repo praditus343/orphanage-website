@@ -40,7 +40,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
 
           {/* Description - kurangi margin bottom */}
           <p className="text-base md:text-xl text-indigo-100 mb-6 md:mb-8 max-w-2xl leading-relaxed mx-auto md:mx-0">
-            Panti Asuhan Pangrekso Dalem Bethlehem memberikan pendidikan berkualitas, kasih sayang yang tulus, dan
+            LKSA (Lembaga Kesejahteraan Sosial Anak) Pangrekso Dalem Bethlehem memberikan pendidikan berkualitas, kasih sayang yang tulus, dan
             membangun masa depan cerah untuk anak-anak yang membutuhkan dukungan.
           </p>
 

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Heart, Wallet, CreditCard, Building, Smartphone, CheckCircle, QrCode } from "lucide-react"
+import { Heart, Wallet, CreditCard, Building, Smartphone, CheckCircle, QrCode, Download } from "lucide-react"
 import Image from "next/image"
 
 export default function DonationSection() {
@@ -16,8 +16,8 @@ export default function DonationSection() {
   }
 
   return (
-<section id="donasi" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 via-white to-violet-50">
-        <div className="container mx-auto px-4">
+    <section id="donasi" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 via-white to-violet-50">
+      <div className="container mx-auto px-4">
         {/* Header Section - Mobile Responsive */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
           <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-800 rounded-full px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm font-medium mb-4 md:mb-6">
@@ -144,7 +144,7 @@ export default function DonationSection() {
                     <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border-2 border-slate-200 shadow-lg mb-4 sm:mb-6">
                       <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 relative rounded-lg sm:rounded-xl overflow-hidden mb-3 sm:mb-4">
                         <Image
-                          src="/qris.jpeg"
+                          src="/qris.png"
                           alt="QRIS Code untuk Donasi"
                           fill
                           className="object-contain"
@@ -154,6 +154,21 @@ export default function DonationSection() {
                         Scan QR Code untuk Donasi
                       </p>
                     </div>
+
+                    {/* Download Button */}
+                    <a
+                      href="/qris.png"
+                      download="QRIS-LKSA-Pangrekso-Dalem-Bethlehem.png"
+                      className="mb-4 sm:mb-6"
+                    >
+                      <Button
+                        variant="outline"
+                        className="flex items-center gap-2 border-indigo-200 text-indigo-700 bg-indigo-50/50 hover:bg-indigo-100 hover:text-indigo-800 rounded-full px-6 py-2 shadow-sm transition-all duration-300 font-medium"
+                      >
+                        <Download className="w-4 h-4" />
+                        <span>Unduh QRIS</span>
+                      </Button>
+                    </a>
                     <div className="text-center px-4">
                       <p className="text-slate-600 mb-2 text-sm sm:text-base">Buka aplikasi pembayaran favorit Anda</p>
                       <p className="text-xs sm:text-sm text-slate-500">

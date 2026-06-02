@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { MapPin, Phone, Mail, Home } from "lucide-react"
 
 interface FooterProps {
@@ -80,12 +81,18 @@ export default function Footer({ scrollToSection }: FooterProps) {
           {/* Brand Section */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-gradient-to-br from-indigo-500 to-violet-500 rounded-lg sm:rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <Home className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 relative overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl bg-white p-0.5 shadow-lg shadow-indigo-500/10">
+                <Image
+                  src="/ico/apple-touch-icon.png"
+                  alt="LKSA Bethlehem Logo"
+                  width={56}
+                  height={56}
+                  className="w-full h-full object-contain rounded-md"
+                />
               </div>
               <div>
-                <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold block leading-tight">Panti Asuhan</span>
-                <p className="text-xs sm:text-sm text-slate-400 -mt-0.5">Pangrekso Dalem Bethlehem</p>
+                <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold block leading-tight">LKSA Pangrekso Dalem Bethlehem</span>
+                <p className="text-xs sm:text-sm text-slate-400 -mt-0.5">Lembaga Kesejahteraan Sosial Anak</p>
               </div>
             </div>
             
@@ -150,7 +157,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
         {/* Copyright Section */}
         <div className="border-t border-slate-800 pt-4 sm:pt-6 md:pt-8 text-center text-slate-500">
           <p className="hover:text-slate-400 transition-colors text-xs sm:text-sm leading-relaxed px-2 sm:px-0">
-            &copy; {new Date().getFullYear()} Panti Asuhan Pangrekso Dalem Bethlehem. Seluruh hak cipta dilindungi
+            &copy; {new Date().getFullYear()} LKSA Pangrekso Dalem Bethlehem. Seluruh hak cipta dilindungi
             undang-undang.
           </p>
         </div>
